@@ -18,31 +18,31 @@
                 <img class="responsive-img" src="css/no-gmo.png" alt="">
             </div>
                 <div class="col m4">
-                    <form id="form2" action="" method="post">
+                    <form action="conexao.php" method="POST">
                         <h1>cadastrar-se</h1>
                           <label for="first_name">Nome do usuário</label>
-                          <input placeholder="Digite o seu nome" id="first_name" type="text" class="validate">
+                          <input placeholder="Digite o seu nome" id="user" name="user" type="text" class="validate">
                         <p>
                             <label>Sexo</label><br>
                             <label>
-                              <input class="with-gap" name="group1" type="radio" />
+                              <input class="with-gap" name="Sexo" type="radio" />
                               <span>Feminino</span>
                             </label>
                         </p>
                         <p>
                             <label>
-                              <input class="with-gap" name="group1" type="radio"  />
+                              <input class="with-gap" name="Sexo" type="radio"  />
                               <span>Masculino</span>
                             </label>
                         </p>
                         <label for="first_name">Login</label>
-                          <input placeholder="Digite o seu email" id="first_name" type="text" class="validate">
+                          <input placeholder="Digite o seu email" id="login" name="login" type="text" class="validate">
                           <label for="first_name white">Senha</label>    
-                          <input id="password" type="password" class="validate" placeholder="Digite a sua senha">
+                          <input id="senha" type="password" name="senha" class="validate" placeholder="Digite a sua senha">
                           <label for="first_name">Confirmar senha</label>    
                           <input id="password" type="password" class="validate" placeholder="Confirme a sua senha">
                           <a href="index.html" class="waves-effect waves-light btn">voltar</a>
-                        <a class="waves-effect waves-light btn">enviar</a>
+                          <button class="btn waves-effect waves-light" type="submit" name="action">Enviar</button>
                     </form>
                 </div>
                 <div class="col m4 "></div>
@@ -50,6 +50,13 @@
     </div>
  
  
+ 
+ 
+ 
+      <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
  
  
  
